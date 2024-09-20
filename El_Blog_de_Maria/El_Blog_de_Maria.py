@@ -8,6 +8,7 @@ from El_Blog_de_Maria.components.navbar import navbar
 from El_Blog_de_Maria.components.footer import footer
 from El_Blog_de_Maria.views.header.header import header
 from El_Blog_de_Maria.views.links.links import links
+import El_Blog_de_Maria.styles.styles as styles
 
 
 class State(rx.State):
@@ -18,12 +19,19 @@ class State(rx.State):
 
 def index() -> rx.Component:
     # Welcome Page (Index)
-    return rx.vstack(
+    return rx.box(
         navbar(),
+        rx.center(
+        rx.vstack(
         header(),
         links(), 
+        max_width=styles.MAX_WIDTH,
+        width='100%',
+        margin_y=styles.Spacer.BIG
+    )),
         footer()
     )
+    
 
-app = rx.App()
+app = rx.App(style=styles.BASE_STYLE)
 app.add_page(index)
