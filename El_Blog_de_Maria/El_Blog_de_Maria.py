@@ -20,7 +20,7 @@ class State(rx.State):
 def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.box(
-        navbar(),
+        #navbar(),
         rx.center(
         rx.vstack(
         header(),

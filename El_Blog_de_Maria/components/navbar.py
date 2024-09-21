@@ -1,4 +1,5 @@
 import reflex as rx
+import  El_Blog_de_Maria.styles.styles as style
 
 
 
@@ -10,8 +11,9 @@ def navbar() -> rx.Component:
             height='40px'
         ),
         position='sticky',
-        bg='blue',
-        padding_x='16px',
-        padding_y='8px', 
-        z_index='999'
+        bg='lightgray',
+        padding_x=style.Spacer.DEFAULT.value,
+        padding_y=style.Spacer.SMALL.value, 
+        z_index='999',
+        top='0'
     )

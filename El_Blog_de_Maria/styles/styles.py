@@ -36,3 +36,9 @@ button_title_style = dict(
 button_body_style = dict(
     font_size= Spacer.MEDIUM.value
 )
+
+title_style = dict(
+        #size='5',
+        width='100%',
+        padding_top=Spacer.DEFAULT.value
+)

@@ -11,7 +11,8 @@ def link_button(name:str, body: str, url:str) -> rx.Component:
                 rx.vstack(
                     rx.text(name, style=styles.button_title_style),
                     rx.text(body, style=styles.button_body_style),
-                    align_items='start'
+                    align_items='start',
+                    spacing='0px'
                 )
                 )
                 ),
