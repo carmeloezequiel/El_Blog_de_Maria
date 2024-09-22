@@ -23,11 +23,13 @@ def header() -> rx.Component:
                 ),
                 spacing=styles.Spacer.BIG.value,          
             ),
+        rx.heading(
+            '¡Hola, amantes de la creatividad y la organización!', size='5'
+            ),
         rx.text('''
-                Hola soy maria, Hola soy maria, Hola soy maria, Hola soy maria,
-                Hola soy maria, Hola soy maria, Hola soy maria, Hola soy maria,
-                Hola soy maria, Hola soy maria, Hola soy maria, Hola soy maria,
-                Hola soy maria, Hola soy maria, Hola soy maria, Hola soy maria,
+                Si te apasionan las libretas decoradas, el bullet journal, el ArtJournal y el scrapbooking, estás en el lugar perfecto.
+                Mi comunidad está llena de inspiración para darle vida a tus ideas, organizar tus días con estilo y disfrutar de la papelería bonita.
+                Te invito a seguirme en mis redes para explorar juntas nuevas técnicas, proyectos y mucho más. ¡Vamos a crear algo hermoso!
                 '''),
-        spacing=styles.Spacer.BIG.value
+        spacing=styles.Spacer.DEFAULT.value
     )

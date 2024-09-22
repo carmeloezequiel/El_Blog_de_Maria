@@ -5,6 +5,14 @@ from El_Blog_de_Maria.styles.colors import Color, Text_Color
 
 #Constantes
 MAX_WIDTH='600px'
+ZERO='0px !important'
+
+#URL
+class Url(Enum):
+    INSTAGRAM='https://www.instagram.com/elblockdemaria/'
+    YOUTUBE='https://www.youtube.com/@elblockdemaria'
+    TIKTOK='https://www.tiktok.com/@elblockdemaria'
+    
 
 
 #Tamaños 

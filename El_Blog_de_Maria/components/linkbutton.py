@@ -6,7 +6,7 @@ def link_button(name:str, body: str, url:str) -> rx.Component:
     return rx.link(
         rx.button(
             rx.hstack(
-                rx.icon(tag=name.lower(),
+                rx.image(src=f'{name.lower()}.svg',
                         width=styles.Spacer.BIG.value,
                         height=styles.Spacer.BIG.value,
                         margin_y=styles.Spacer.SMALL.value),
@@ -14,10 +14,12 @@ def link_button(name:str, body: str, url:str) -> rx.Component:
                     rx.text(name, style=styles.button_title_style),
                     rx.text(body, style=styles.button_body_style),
                     align_items='start',
-                    spacing='0px'
+                    
+                    spacing=styles.ZERO
                 )
                 ),
-                color_scheme='amber'
+                color_scheme='amber',
+                spacing=styles.ZERO
                 ),
         href=url,
         is_external=True,
