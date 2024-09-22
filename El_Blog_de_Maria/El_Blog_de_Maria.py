@@ -34,4 +34,6 @@ def index() -> rx.Component:
     
 
 app = rx.App(style=styles.BASE_STYLE)
+
+
 app.add_page(index)

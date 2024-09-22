@@ -16,8 +16,6 @@ def header() -> rx.Component:
                 rx.text('@elblogdemaria', margin_top='0px !important'),
                 rx.hstack(
                     link_icon('https://www.youtube.com/watch?v=n2YrGsXJC6Y&t=12397s'),
-                    link_icon('https://www.youtube.com/watch?v=n2YrGsXJC6Y&t=12397s'),
-                    link_icon('https://www.youtube.com/watch?v=n2YrGsXJC6Y&t=12397s'),
                 ),
                 spacing=styles.Spacer.SMALL.value
                 

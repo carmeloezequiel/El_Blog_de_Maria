@@ -1,10 +1,11 @@
 import reflex as rx
-import  El_Blog_de_Maria.styles.styles as style
+from El_Blog_de_Maria.styles.colors import Color, Text_Color
 
 
 def link_icon(url:str) -> rx.Component:
     return rx.link(
-        rx.icon(tag='facebook'),
+        rx.icon(tag='mail', color=Text_Color.HEADER.value),
         href=url,
-        is_external=True
+        is_external=True,
+        
     )

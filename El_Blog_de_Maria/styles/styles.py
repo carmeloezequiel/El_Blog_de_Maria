@@ -1,5 +1,7 @@
 from enum import Enum
 import reflex as rx
+from El_Blog_de_Maria.styles.colors import Color, Text_Color
+
 
 #Constantes
 MAX_WIDTH='600px'
@@ -16,12 +18,23 @@ class Spacer(Enum):
     
     
 BASE_STYLE = {
+    'background':Color.BACKGROUND,
+    rx.heading: {
+        'color':Text_Color.HEADER
+            },
+    rx.text: {
+        'color':Text_Color.HEADER
+            },
+    rx.icon: {
+        'color':Text_Color.HEADER
+            },
     rx.button: {
         'width':'100%',
         'height':'100%',
         'display':'block',
         'padding': Spacer.SMALL,
-        'border_radius':Spacer.DEFAULT
+        'border_radius':Spacer.DEFAULT,
+        'bg':Color.CONTENT
     },
     rx.link:{
         'text_decoration':'none',
