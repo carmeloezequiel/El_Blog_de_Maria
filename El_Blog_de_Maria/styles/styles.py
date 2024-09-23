@@ -12,7 +12,7 @@ class Url(Enum):
     INSTAGRAM='https://www.instagram.com/elblockdemaria/'
     YOUTUBE='https://www.youtube.com/@elblockdemaria'
     TIKTOK='https://www.tiktok.com/@elblockdemaria'
-    EMAIL='carmelogarcia.opsu@gmail.com'
+    EMAIL='elblockdemaria.contacto@gmail.com'
     
 
 

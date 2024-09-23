@@ -17,7 +17,9 @@ def header() -> rx.Component:
                         
                 rx.text('Papelería bonita, bullet journal, ArtJournal y scrapbooking ✨', margin_top='0px !important'),
                 rx.hstack(
+                    rx.text('Contacto para negocios: ', size='2'),
                     link_icon(f'mailto:{styles.Url.EMAIL.value}'),
+                    align_items='center'
                 ),
                 spacing=styles.Spacer.SMALL.value
                 
@@ -54,7 +56,9 @@ def header() -> rx.Component:
                         size='3',
                         text_align='left'),
                 rx.hstack(
+                    rx.text('Contacto para negocios: ', size='2'),
                     link_icon(f'mailto:{styles.Url.EMAIL.value}'),
+                    align_items='center'
                 ),
                 spacing=styles.Spacer.SMALL.value
                 
