@@ -14,12 +14,12 @@ def link_button(name:str, body: str, url:str) -> rx.Component:
                     rx.text(name, style=styles.button_title_style),
                     rx.text(body, style=styles.button_body_style),
                     align_items='start',
-                    
                     spacing=styles.ZERO
                 )
                 ),
                 color_scheme='amber',
-                spacing=styles.ZERO
+                spacing=styles.ZERO,
+                padding=styles.Spacer.SMALL.value
                 ),
         href=url,
         is_external=True,

@@ -12,6 +12,7 @@ class Url(Enum):
     INSTAGRAM='https://www.instagram.com/elblockdemaria/'
     YOUTUBE='https://www.youtube.com/@elblockdemaria'
     TIKTOK='https://www.tiktok.com/@elblockdemaria'
+    EMAIL='carmelogarcia.opsu@gmail.com'
     
 
 
@@ -42,11 +43,16 @@ BASE_STYLE = {
         'display':'block',
         'padding': Spacer.SMALL,
         'border_radius':Spacer.DEFAULT,
-        'bg':Color.CONTENT
+        'bg':Color.CONTENT,
+        '_hover':{
+           'bg':Color.SECONDARY
+        }
     },
     rx.link:{
         'text_decoration':'none',
-        '_hover':{}
+        '_hover':{
+            
+        }
     }
 }
 
@@ -62,4 +68,11 @@ title_style = dict(
         #size='5',
         width='100%',
         padding_top=Spacer.DEFAULT.value
+)
+
+
+title_style_mobile = dict(
+        #size='5',
+        width='100%',
+        padding_top=Spacer.SMALL.value
 )
